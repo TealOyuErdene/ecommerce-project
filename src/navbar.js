@@ -5,11 +5,12 @@ import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import InputGroup from "react-bootstrap/InputGroup";
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavbarItem() {
   return (
     <>
-      <Navbar className="navbar">
+      <Navbar className="navbar-top">
         <Container>
           <Navbar.Brand href="#home">
             <img src="/logo.png" alt="logo" />
@@ -39,6 +40,47 @@ function NavbarItem() {
           </div>
         </Container>
       </Navbar>
+
+      <Navbar className="navbar-bottom">
+      <Container>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <NavDropdown title="Browse categories" id="basic-nav-dropdown" className="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">1</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">2</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">3</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown title="Home" id="basic-nav-dropdown" className="nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">1</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">2</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">3</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown title="Catalog" id="basic-nav-dropdown" className="nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">1</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">2</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">3</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown title="Blog" id="basic-nav-dropdown" className="nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">1</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">2</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">3</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown title="Pages" id="basic-nav-dropdown" className="nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">1</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">2</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">3</NavDropdown.Item>
+            </NavDropdown>
+
+            <Nav.Link href="#home" className="nav-dropdown" style={{marginTop: '8px'}}>About Us</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
     </>
   );
 }
