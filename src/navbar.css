@@ -1,0 +1,42 @@
+.navbar{
+    background: #003F62;
+    height: 100px;
+}
+
+.mb-3{
+    margin-top: 20px;
+    width: 350px;
+    padding-left: 85px;
+}
+
+.searchForm{
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+
+#button-addon2{
+    position: absolute;
+    left: 340px;
+    height: 38px;
+    border-radius: 10px;
+    background-color: #EDA415;
+    color: white;
+    border: none;
+    width: 130px;
+}
+
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #EDA415;
+    color: white;
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+
+
+
+
