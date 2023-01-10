@@ -5,7 +5,6 @@
 
 .search{
     margin-left: 85px;
-    background-color: white;
     border-radius: 10px;
 }
 
@@ -17,14 +16,13 @@
 
 #button-addon2{
     height: 38px;
-    border-radius: 10px;
     background-color: #EDA415;
     color: white;
     border: none;
     width: 130px;
 }
 
-.circle{
+.circle-icon{
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -72,4 +70,29 @@
     padding-top: 15px;
     color: #003F62;
     font-weight: 700;
+    margin-left: 350px;
+}
+.top_title{
+    width: 175px;
+    color: #1B5A7D;
+    font-size: 43px;
+    margin-bottom: 20px;
+}
+.primary_btn{
+    padding: 18px;
+    border: none;
+    border-radius: 20px;
+    width: 145px;
+    height: 60px;
+}
+.circle-container{
+    margin-left: 120px;
+    margin-top: 50px;
+}
+.circle{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: none;
+    border: 1px solid #3A3A3A;
 }
